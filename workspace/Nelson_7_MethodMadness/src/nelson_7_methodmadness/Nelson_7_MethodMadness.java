@@ -32,12 +32,23 @@ public class Nelson_7_MethodMadness extends Application {
         draw5(gc);
         draw6(gc);
         draw7(gc);
+        draw8(gc);
+        draw9(gc);
+        draw10(gc);
+        draw11(gc);
+        draw12(gc);
+        draw13(gc);
+        draw14(gc);
+        draw15(gc);
+        draw16(gc);
+        draw17(gc);
+        draw18(gc);
         primaryStage.setScene(new Scene(root));
         primaryStage.show();
     }
     private void draw0(GraphicsContext gc) {
         for (int i = 0; i < 1020; i+= 1){
-            if (true) {
+            if (n == 0) {
                 gc.setFill(Color.rgb(i/4, i/4, i/4));
                 gc.fillOval(i/2, i/2, 1020 - i, 1020 - i);
             }
