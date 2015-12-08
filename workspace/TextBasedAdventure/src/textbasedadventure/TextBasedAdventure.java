@@ -17,18 +17,25 @@ public class TextBasedAdventure {
     static Random random = new Random();
     public static int r;
     public static void main(String[] args) {
+//        #while
+//        #method1()
+//        I used this method to run the while loop for the game. That's all. Yep. That's it, folks.
         while (playagain) {
             intro();
             intropt2();
         }
     }
     public static void intro() {
+//        #method2()
+//        This method is for running the SPOOOOOKY intro. There's also a method for another part of it.
         try {
             Thread.sleep(1000);
         }
         catch(InterruptedException ex) {
         }
         System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nYou suddenly wake up.");
+//        #hero
+//        This is where you are introduced. In my game, you aren't really considered much of a hero... at all... But hey! It was a requirement.
         try {
             Thread.sleep(3000);
         }
@@ -63,6 +70,8 @@ public class TextBasedAdventure {
         }
     }
     public static void name() {
+//        #method3()
+//        This is where the user inputs his/her name. You'd be suprised how much spam people put in instead of their actual name, so I put in a 10 character limit.
         Scanner name = new Scanner(System.in);
         Name = name.nextLine();
         if (Name.length()>10) {
@@ -77,6 +86,8 @@ public class TextBasedAdventure {
         System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
     }
     public static void intropt2() {
+//        #method4()
+//        This method is for running the 2nd part of the SPOOOOOKY intro.
         name = false;
         System.out.println("Suddenly, you hear a voice.");
         try {
@@ -85,6 +96,8 @@ public class TextBasedAdventure {
         catch(InterruptedException ex) {
         }
         System.out.println("Hello, " + Name + ".");
+//        #enemyobject
+//        This is where the protagonist is introduced. The protagonist hides his/her/it's identity from the "hero", but only for safety reasons, of course ;) . The protagonist really isn't that bad, unless you include the burning of humans alive, or the drowning, or the freezing... or the...
         try {
             Thread.sleep(2000);
         }
@@ -260,6 +273,8 @@ public class TextBasedAdventure {
                         catch(InterruptedException ex) {
                         }
                         if (Q5new.equals("repeat")) {
+//                            #win
+//                            This is the "win" that just loops the game around again. Shhh... don't tell anyone...
                             intro();
                             intropt2();
                         }
@@ -315,6 +330,9 @@ public class TextBasedAdventure {
         System.exit(0);
     }
     public static void die() {
+//        #lose
+//        #method5()
+//        This is the method that is called upon when the user dies. It picks a random number out of 5 so that there's a different death every time! What fun! There are also 5 more methods for these deaths.
         r = random.nextInt(5);
         if (r == 0) {
             death1();
@@ -333,6 +351,8 @@ public class TextBasedAdventure {
         }
     }
     public static void death1() {
+//        #method6()
+//        This is the first death message.
         System.out.println("You all of a sudden start to feel very cold.");
         try {
             Thread.sleep(2500);
@@ -355,6 +375,8 @@ public class TextBasedAdventure {
         intropt2();
     }
     public static void death2() {
+//        #method7()
+//        This is the second death message.
         System.out.println("Suddenly, the walls to your left and right jolt.");
         try {
             Thread.sleep(2500);
@@ -377,6 +399,8 @@ public class TextBasedAdventure {
         intropt2();
     }
     public static void death3() {
+//        #method8()
+//        This is the third death message.
         System.out.println("A hole in the ceiling opens up, and water starts gushing into the room.");
         try {
             Thread.sleep(3000);
@@ -399,6 +423,8 @@ public class TextBasedAdventure {
         intropt2();
     }
     public static void death4() {
+//        #method9()
+//        This is the fourth death message.
         System.out.println("You suddenly start struggling to breathe.");
         try {
             Thread.sleep(2000);
@@ -415,6 +441,8 @@ public class TextBasedAdventure {
         intropt2();
     }
     public static void death5() {
+//        #method10()
+//        This is the fifth death message.
         System.out.println("Suddenly, the floor opens up.");
         try {
             Thread.sleep(1500);
